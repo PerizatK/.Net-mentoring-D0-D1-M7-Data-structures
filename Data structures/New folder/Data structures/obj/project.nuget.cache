@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZJsoEOj3Ed2/MiBOHQp0HfZTaiNc9BDFsGy1jHto7/2X3TfDbG42HMRtJFQcpjJFR49Bkxp16cSCCW5dCVYhBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Perizat_Karina\\Documents\\GitHub\\.Net Mentoring D0-D1\\.Net-mentoring-D0-D1-M7-Data-structures\\Data structures\\Data structures\\Data structures.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\npoi\\2.5.2\\npoi.2.5.2.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Perizat_Karina\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
