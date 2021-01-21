@@ -56,8 +56,8 @@ namespace Data_Structures
             }
         }
 
-        // удаление элемента
-        public bool RemoveAt(T data)
+        // удаление элемента по содержимому
+        public bool RemoveData(T data)
         {
             if (isDoubleList)
             {
@@ -81,7 +81,7 @@ namespace Data_Structures
                     }
                     else
                     {
-                        // если последний, переустанавливаем tail
+                        // если последний, переустанавливаем last
                         last = current.Previous;
                     }
 
@@ -162,7 +162,94 @@ namespace Data_Structures
             return default;
         }
 
-        public int Length()
+        // Возвращает элемент по позиции
+        public bool RemoveAt(int position)
+        {
+            if (isDoubleList)
+            {
+                Node<T> current = head;
+                int i = 0;
+
+                // поиск удаляемого узла
+                while (current != null)
+                {
+                    if (i == position)
+                    {
+                        break;
+                    }
+                    current = current.Next;
+                }
+                if (current != null)
+                {
+                    // если узел не последний
+                    if (current.Next != null)
+                    {
+                        current.Next.Previous = current.Previous;
+                    }
+                    else
+                    {
+                        // если последний, переустанавливаем последнее значение
+                        last = current.Previous;
+                    }
+
+                    // если узел не первый
+                    if (current.Previous != null)
+                    {
+                        current.Previous.Next = current.Next;
+                    }
+                    else
+                    {
+                        // если первый, переустанавливаем head
+                        head = current.Next;
+                    }
+                    count--;
+                    return true;
+                }
+                i++;
+            }
+            else
+            {
+                Node<T> current = head;
+                Node<T> previous = null;
+                int i = 0;
+
+                while (current != null)
+                {
+                    if (i == position)
+                    {
+                        // Если узел в середине или в конце
+                        if (previous != null)
+                        {
+                            // убираем узел current, теперь previous ссылается не на current, а на current.Next
+                            previous.Next = current.Next;
+                            // Если current.Next не установлен, значит узел последний,
+                            // изменяем переменную last
+                            if (current.Next == null)
+                                last = previous;
+                        }
+                        else
+                        {
+                            // если удаляется первый элемент
+                            // переустанавливаем значение head
+                            head = head.Next;
+
+                            // если после удаления список пуст, сбрасываем last
+                            if (head == null)
+                                last = null;
+                        }
+                        count--;
+                        return true;
+                    }
+
+                    previous = current;
+                    current = current.Next;
+                    i++;
+                }
+            }
+            return false;
+        }
+
+    public int Length()
         {
             return count;
         }

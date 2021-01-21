@@ -16,3 +16,5 @@ namespace Data_Structures
         public Node<T> Previous { get; set; } // указатель на предыд.элемент для двойного списка
     }
 }
+
+
